@@ -1,11 +1,16 @@
+type Student = {
+    nama?: string;
+    job: string;
+    Upskill: string;
+};
 
-
-const Card = () => {
+const Card = (props: Student) => {
+    const {nama = "Anonymus", job, Upskill} = props;
     return (
-        <div className="ml-3 mt-3 border-2 border-dashed w-75 border-indigo-500">
-            <p> Nama saya Marvel</p>
-            <p> Saya Pengangguran</p>
-            <p> Saya belajar React</p>
+        <div className="ml-3 mt-3 border-2 border-dashed w-75 border-indigo-500 rounded-md">
+            <p> Nama saya {nama} </p>
+            <p> Saya {job} </p>
+            <p> Saya belajar {Upskill} </p>
         </div>
     );
 };

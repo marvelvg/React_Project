@@ -1,6 +1,12 @@
-
-const Profile = ()=> {
-        return <h1 style={{color: "brown", fontSize: "32px"}}> Create World</h1>
+import Card from "./Card";
+const Profile = () => {
+    return (
+        <div className="flex flex-column">
+            <Card />
+            <Card />
+            <Card />
+        </div>
+    )
 };
 
 export default Profile;

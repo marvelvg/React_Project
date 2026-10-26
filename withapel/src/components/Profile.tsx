@@ -26,15 +26,17 @@ const students: Student[] = [
 
 const Profile = () => {
     return (
-        <div className="flex flex -column">
+        <div className="flex flex-col">
 
             <Card nama="Surya" job="Sales" Upskill="Digital Marketing"/>
-            
+
             {
               students.map((product)=>{
                   return <Card nama = {product.nama} job = {product.job} Upskill={product.Upskill} />
               })
             }
+
+
         </div>
     )
 };

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export const useCounter = () => { // Custom React Hook MUst be declared as "use" + "Name" 
     const [count, setCount] = useState(0);
 

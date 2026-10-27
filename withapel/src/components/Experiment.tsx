@@ -18,9 +18,6 @@ export const Experiment = () => {
                 <p className="text-dark"> Melo embud</p>
             </div>
 
-
-
-
         </div>
     );
 }
